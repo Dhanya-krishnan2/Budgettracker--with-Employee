@@ -138,12 +138,18 @@ node filename
 ## Demo
 ![](animated.gif)
 
-![demo](https://drive.google.com/file/d/19QIP65-EB-_eHLzY022t3MW8JmdZv3O-/view)
+![](/2020-07-27%20(1).png)
+
+## The recorded in the following link
+
+https://drive.google.com/file/d/19QIP65-EB-_eHLzY022t3MW8JmdZv3O-/view
 
 ## Submission
 
 You are required to submit the following:
 
 - An animated GIF demonstrating the app functionality
+https://drive.google.com/file/d/19QIP65-EB-_eHLzY022t3MW8JmdZv3O-/view
 
 - The URL of the GitHub repository
+https://github.com/Dhanya-krishnan2/Budgettracker--with-Employee/blob/master/readme.md
