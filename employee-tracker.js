@@ -106,7 +106,7 @@ function mainMenu(){
 // View all employees 
 function viewAllEmp(){
 
-    // Query to view all employees
+    // Query to view all employees and using JOIN property of database to retreive the information we wanted to display that way we will add managers details as well.
     let query = "SELECT e.id, e.first_name, e.last_name, role.title, department.name AS department, role.salary, concat(m.first_name, ' ' ,  m.last_name) AS manager FROM employee e LEFT JOIN employee m ON e.manager_id = m.id INNER JOIN role ON e.role_id = role.id INNER JOIN department ON role.department_id = department.id ORDER BY ID ASC";
 
     // Query from connection
@@ -114,7 +114,7 @@ function viewAllEmp(){
         if(err) return err;
         console.log("\n");
 
-        // Display query results using console.table
+        // Display query results using console.table in the form of a table by using the dependsncy console.table
         console.table(res);
 
         //Back to main menu
@@ -125,10 +125,10 @@ function viewAllEmp(){
 // View all employees by department
 function viewAllEmpByDept(){
 
-    // Set global array to store department names
+    // Set global array to store department names and initialise it to null
     let deptArr = [];
 
-    // Create new connection using promise-sql
+    // Create new connection using promise-sql and it will work asynchronousely
     promisemysql.createConnection(connectionProperties
     ).then((conn) => {
 
