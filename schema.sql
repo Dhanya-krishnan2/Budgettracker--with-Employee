@@ -5,6 +5,7 @@ CREATE DATABASE employees_DB;
 USE employees_DB;
 
 ----- Create Department table -----
+-----these database is created by using my sql workbench
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
