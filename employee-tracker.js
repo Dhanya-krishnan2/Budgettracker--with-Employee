@@ -1,4 +1,4 @@
-// requiring the dependencies
+// requiring the dependencies by installing by using npm
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 const consoleTable = require("console.table");
